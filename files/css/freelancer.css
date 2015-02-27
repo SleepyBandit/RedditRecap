@@ -30,6 +30,9 @@ a.feedLink:hover,
 a.feedLink:focus, p strong {
     color:gold;
 }
+a.feedLink {
+    word-wrap: break-word;
+}
 
 h1,
 h2,
