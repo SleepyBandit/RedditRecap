@@ -1,11 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>Reddit Recap</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TIL Reddit Recap Podcast">
+    <meta name="author" content="Matt Greene">
+
+    <title>TIL Reddit Recap Podcast</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="files/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="files/css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="files/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-<h1>Reddit Recap</h1>
-<p>This page will eventually house information about this app</p>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">TIL Reddit Recap</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#tech">The Tech</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#support">Support</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="files/img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">TIL Reddit Recap</span>
+                        <hr class="star-light">
+                        <span class="skills">A podcast created entirely by a computer program</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+     <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="mic">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>This project spawned from a conversation I had with a friend about audio books and podcasts. He was not a big fan of them, and when I asked him what would get him to listen he replied;</p>
+                </div>
+                <div class="col-lg-4">
+                    <blockquote>
+                        <p>"If there was a podcast that read the top TIL posts from Reddit I might find that worth listening to."</p>
+                    </blockquote>
+                </div>
+                <div class="col-lg-4">
+                    <p>A daily TIL Recap Podcast? That sounded entertaining to me, but also sounded like a lot of time for an individual to dedicate to everything it takes to produce a podcast every single day. That is when it hit me, why couldn't a program be made to do all this?</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h3>From that thought, this automated podcast was born.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="tech">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>The Technology</h2>
+                    <hr class="gear">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>The TIL Reddit Recap podcast is an application written using JavaScript and the NodeJS framework.  The application completes the following tasks on a daily schedule to produce the automated audio podcast:</p>
+                </div>
+                <div class="col-lg-4">
+                    <ul>
+                        <li>Queries Reddit for the top 25 voted TIL posts for the past 24 hours</li>
+                        <li>Cleans the headline text to limit potential error during TTS conversion</li>
+                        <li>Creates an intro, numerated headlines, and closing scripts for the day's podcast</li>
+                        <li>Creates a back up of the daily script text in json format</li>
+                        <li>Creates a show note text file of links to each post on Reddit</li>
+                        <li>Uses a TTS (text-to-speech) API to create the shows audio files</li>
+                        <li>Uploads the final podcast MP3 file to Archive.org</li>
+                        <li>Creates an updated, itunes' supported, XML feed</li>
+                        <li>Pushes the XML feed changes to the feed file hosted on GitHub</li>
+                        <li>Conducts internal cleanup and logging for the days tasks</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <p>The application is scheduled to produce a new podcast every day at <strong>1:30 PM PST</strong> and can be found in iTunes or by subscribing to the podcast feed directly at</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p><a class="feedLink" href="http://sleepybandit.github.io/RedditRecap/TILRedditRecapFeed.xml">http://sleepybandit.github.io/RedditRecap/TILRedditRecapFeed.xml</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Grid Section -->
+    <section id="support">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Support</h2>
+                    <hr class="heart">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h3>Help keep this project alive!</h3>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Donations are needed to help cover hosting and future improvements.  Any amount will help, and once hosting costs are covered I hope to improve the voice used by purchasing API licenses to more advanced computer voice systems, as well as maybe expanding the Recap podcast family to include other subreddits!</p>
+                    <p>If you enjoy the show and feel you get some value from listening, then maybe you will be willing to help support the podcast. A little goes a long way, anything can help. Thanks!</p>
+                </div>  
+            </div>
+            <!-- donate boxes will go here -->
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                        ">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Contact</h3>
+                        <p>Please contact me via Twitter, GitHub, or Email</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-github-alt"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Developer Info</h3>
+                        <p>This application was created by Matt Greene, an IT consultant and front-end developer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Matt Greene 2015
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="files/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="files/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="files/js/classie.js"></script>
+    <script src="files/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="files/js/freelancer.js"></script>
+
 </body>
 </html>
