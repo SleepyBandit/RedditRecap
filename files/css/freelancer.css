@@ -34,6 +34,18 @@ a.feedLink {
     word-wrap: break-word;
 }
 
+#subscribe {
+    padding-top: 25px;
+}
+
+#subscribe a {
+    display:inline-block;
+    overflow:hidden;
+    background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_subscribe-lrg.png) no-repeat;
+    width:110px;
+    height:40px;
+}
+
 h1,
 h2,
 h3,
