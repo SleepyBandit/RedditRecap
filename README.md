@@ -8,7 +8,7 @@
 <!-- BADGES/ -->
 
 [![PayPayl donate button](https://img.shields.io/badge/paypal-donate-brightgreen.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=AHVCA49Y9AKNQ&lc=US&item_name=Reddit%20Recap&item_number=redditRecapGithub&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted "Donate once-off to this project using Paypal")
-[![BitCoin donate button](https://img.shields.io/badge/patreon-donate-orange.svg)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Become a patreon contributor")
+[![Patreon donate button](https://img.shields.io/badge/patreon-donate-orange.svg)](http://patreon.com/redditrecap "Become a patreon contributor")
 
 <!-- /BADGES -->
 
