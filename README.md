@@ -15,9 +15,9 @@
 
 <!-- DESCRIPTION/ -->
 
-A daily computer generated podcast that takes the top Today I Learned (TIL) posts from Reddit and reads them to you. This was created mostly for personal use, but I've published the podcast for free for everyone who care to enjoy it.
+A daily computer generated podcast that takes the top Today I Learned (TIL) posts from Reddit and reads them to you. This was created mostly for personal use, but I've published the podcast for free for everyone who cares to enjoy it.
 
-Feel free to find links to the podcast on itunes or the xml feed itself at the [TIL Reddit Recap Site](http://sleepybandit.github.io/RedditRecap/) or get direct access to the feed [here](http://sleepybandit.github.io/RedditRecap/TILRedditRecapFeed.xml)
+Feel free to find links to the podcast on itunes or a link to the [XML Feed file](http://sleepybandit.github.io/RedditRecap/TILRedditRecapFeed.xml) itself at the [TIL Reddit Recap Site](http://sleepybandit.github.io/RedditRecap/)
 
 <!-- /DESCRIPTION -->
 
