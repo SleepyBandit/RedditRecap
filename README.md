@@ -17,7 +17,9 @@
 
 A daily computer generated podcast that takes the top Today I Learned (TIL) posts from Reddit and reads them to you. This was created mostly for personal use, but I've published the podcast for free for everyone who cares to enjoy it.
 
-Feel free to find links to the podcast on itunes or a link to the [XML Feed file](http://sleepybandit.github.io/RedditRecap/TILRedditRecapFeed.xml) itself at the [TIL Reddit Recap Site](http://sleepybandit.github.io/RedditRecap/)
+Feel free to find links to the podcast on [iTunes](https://itunes.apple.com/us/podcast/til-reddit-recap/) or a link to the [XML Feed file](http://sleepybandit.github.io/RedditRecap/TILRedditRecapFeed.xml) itself at the [TIL Reddit Recap Site](http://sleepybandit.github.io/RedditRecap/)
+
+You can also follow the show's [Twitter (bot) account](https://twitter.com/TILRedditRecap)  for all episode and image posts.
 
 <!-- /DESCRIPTION -->
 
@@ -27,7 +29,11 @@ Feel free to find links to the podcast on itunes or a link to the [XML Feed file
 
 This application was written in JavaScript on the NodeJS framework. It completes the following tasks daily:
 
-- Queries Reddit for the top 25 voted TIL posts for the past 24 hours
+- Queries Reddit for the top 50 voted TIL posts for the past 24 hours
+- Checks each post ID against json log of previously used posts to ensure no reuse occurs
+- Generates images with text-overlay for twitter
+- Schedules daily image twitter postings with buffer
+- Downloads images for later backup
 - Cleans the headline text to limit potential error during TTS conversion
 - Creates an intro, numerated headlines, and closing scripts for the day's podcast
 - Creates a back up of the daily script text in json format
@@ -36,8 +42,9 @@ This application was written in JavaScript on the NodeJS framework. It completes
 - Uploads the final podcast MP3 file to Archive.org
 - Creates an updated, itunes' supported, XML feed
 - Pushes the XML feed changes to the feed file hosted on GitHub
+- Creates bitly links and posts them to Twitter
 - Conducts internal cleanup and logging for the days tasks
-- Backs up daily logs and script files to Google Drive
+- Backs up daily logs, images, and script files to Google Drive
 
 <!-- /WHAT -->
 
@@ -52,10 +59,13 @@ This application utilizes the following node modules;
 - [retext](https://github.com/wooorm/retext)
 - [google-api-nodejs-client](https://github.com/google/google-api-nodejs-client)
 - [octokats](https://github.com/philschatz/octokat.js)
+- [twit](https://github.com/ttezel/twit)
 - [MomentJS-Timezone](http://momentjs.com/timezone/docs/)
 - [aws-sdk-js](https://github.com/aws/aws-sdk-js)
 - [request](https://github.com/request/request)
+- [Snoocore](http://snoocore.readme.io)
+- [buffer-node](https://github.com/matthistuff/buffer-node)
 
 <!-- /MODULES -->
 
-More information pretaining to this application will be released in the future.
+For additional information or inquiries, please contact me via email or here on github. Thanks!
